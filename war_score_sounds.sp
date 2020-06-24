@@ -74,4 +74,9 @@ public OnStatusEnd(ConVar convar, char[] oldValue, char[] newValue)
 		ServerCommand("sm_tsay green !!--=== HALF TIME ===--!!");
 		ServerCommand("sm_play @all razzr/wartools/halftime.mp3");
 	}
+	else if (tScore == 15  && ctScore == 15  && status > 5)
+	{
+		ServerCommand("sm_tsay green !!--=== OVER TIME ===--!!");
+		ServerCommand("sm_play @all razzr/wartools/halftime.mp3");
+	}
 }
